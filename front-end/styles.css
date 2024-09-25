@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between album art and song info */
+}
+
+#album-art {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#album-art:hover {
+    transform: scale(1.05);
+}
+
+#song-info {
+    text-align: center;
+    margin-top: 10px; /* Space between album art and song info */
+}
+
+#song-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#song-artist {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+    margin-top: 20px; /* Space between controls and song info */
+}
+
+/* Disabled icon styles */
+#controls i.disabled {
+    color: #555; /* Grey out the icons */
+    pointer-events: none; /* Disable clicks */
+    opacity: 0.5; /* Make it look inactive */
+    cursor: not-allowed;
+}
+
+#controls i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#controls i:hover {
+    color: #1db954; /* Spotify green color on hover */
+    transform: scale(1.1); /* Slight scale up effect on hover */
+}
+
+/* Carousel for song list with cover images */
+#song-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+#song-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for cleaner look */
+}
+
+.song-carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.song-carousel-item:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+#song-carousel img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#song-carousel h4 {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+#song-carousel p {
+    color: #ccc;
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+/* Arrow buttons for scrolling carousel */
+#prev-carousel, #next-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+#prev-carousel {
+    left: 0;
+}
+
+#next-carousel {
+    right: 0;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; /* Space between controls and progress */
+}
+
+#current-time,
+#total-time {
+    font-size: 14px;
+    color: #ccc;
+    width: 50px; /* Set fixed width for time labels */
+}
+
+#progress-slider {
+    flex-grow: 1;
+    margin: 0 10px; /* Space between time labels and slider */
+}
+
+#progress-slider {
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none; /* Remove default appearance */
+    width: 100%; /* Full width */
+    height: 5px; /* Height of the slider */
+    background: #444; /* Background color */
+    border-radius: 5px; /* Rounded edges */
+}
+
+#progress-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none; /* Remove default appearance */
+    width: 15px; /* Thumb size */
+    height: 15px; /* Thumb size */
+    background: #1db954; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#progress-slider::-moz-range-thumb {
+    width: 15px; /* Thumb size */
+    height: 15px; /* Thumb size */
+    background: #1db954; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Change cursor on hover */
+}
+

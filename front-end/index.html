@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify Clone</title>
+</head>
+<body>
+    <div class="container">
+        <img id="album-art" src="/spotify-clone/back-end/static/album-art.jpg" alt="Album Art">
+        <div id="song-info">
+            <h2 id="song-title"></h2>
+            <h4 id="song-artist"></h4>
+            <div id="controls">
+                <i id="prev-btn" class="fas fa-backward"></i>
+                <i id="play-btn" class="fas fa-play"></i>
+                <i id="next-btn" class="fas fa-forward"></i>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-slider" value="0" step="1">
+                <span id="total-time">0:00</span>
+            </div>
+        </div>
+        <div id="song-carousel">
+            <button id="prev-carousel" class="fas fa-chevron-left"></button>
+            <button id="next-carousel" class="fas fa-chevron-right"></button>
+            <!-- Song items will be dynamically inserted here -->
+        </div>
+    </div>
+    
+    <audio id="audio-player" preload="metadata"></audio>
+    <script src="app.js"></script>
+</body>
+</html>

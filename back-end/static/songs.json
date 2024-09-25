@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Hamsaro..",
+        "artist": "Hari Charan and Jonita Gandhi",
+        "album": "Cheliya",
+        "cover_image": "cover1.jpg",
+        "audio": "song1.mp3"
+    },
+    {
+        "title": "Maimarupaa..",
+        "artist": "A.R. Rahman and Shashaa Tirupati",
+        "album": "Cheliya",
+        "cover_image": "cover2.jpeg",
+        "audio": "song2.mp3"
+    },
+    {
+        "title": "Kallumoosi..",
+        "artist": "Gopi Sundar",
+        "album": "Majnu",
+        "cover_image": "cover3.jpg",
+        "audio": "song3.mp3"
+    },
+    {
+        "title": "Madhuramu Kadha..",
+        "artist": "Shreya Goshal",
+        "album": "The Family Star",
+        "cover_image": "cover4.jpg",
+        "audio": "song4.mp3"
+    },
+    {
+        "title": "Kalyani Vaccha Vaccha..",
+        "artist": "Karthik, Mangli",
+        "album": "The Family Star",
+        "cover_image": "cover4.jpg",
+        "audio": "song5.mp3"
+    },
+    {
+        "title": "Nandanandanaa..",
+        "artist": "Sid Sriram",
+        "album": "The Family Star",
+        "cover_image": "cover4.jpg",
+        "audio": "song6.mp3"
+    }
+]
